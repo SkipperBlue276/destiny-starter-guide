@@ -1,0 +1,18 @@
+.title {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    
+
+}
+.title-side-image {
+    width: 200px;
+    height: 200px;
+}
