@@ -1,18 +1,35 @@
+
+body {
+    color: white;
+    text-align: center;
+}
+
 .title {
     display: flex;
     justify-content: center;
     height: auto;
     width: auto;
     max-height: 200px;
+    padding-top: 30px;
     
-    text-align: center;
     font-size: 30px;
-    color: white;
     text-shadow: 3px 3px 1px black;
-    
-
 }
+
 .title-side-image {
     width: 200px;
     height: 200px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding-top: 20px;
+}
+
+.tool-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
 }
