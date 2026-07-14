@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Atkinson Hyperlegible Mono';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+}
+
+a {
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    min-height: 80px;
+
+    border-width: 0px 0px 6px 0px;
+    border-style: ridge;
+    border-color: blueviolet;
+}
+
+.return-home {
+    background-color: blue;
+    min-width: 150px;
+}
+
+.top-guide-nav {
+    background-color: aqua;
+    min-width: 600px;
+    flex-grow: 1;
+}
+
+.main-content {
+    background-color: purple;
+}
