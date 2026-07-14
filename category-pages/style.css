@@ -29,9 +29,34 @@ a {
 }
 
 .top-guide-nav {
+    display: flex;
     background-color: aqua;
     min-width: 600px;
     flex-grow: 1;
+
+    justify-content: center;
+}
+
+.top-guide-nav > div {
+    margin: 5px 0px;
+}
+
+.previous-guide {
+    background-color: red;
+    min-width: 150px;
+    flex-grow: 0.15;
+}
+
+.current-guide {
+    background-color: orange;
+    min-width: 150px;
+    flex-grow: 0.3;
+}
+
+.next-guide {
+    background-color: yellow;
+    min-width: 150px;
+    flex-grow: 0.15;
 }
 
 .main-content {
