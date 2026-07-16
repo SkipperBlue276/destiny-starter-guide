@@ -95,12 +95,17 @@ a {
     background-color: #252525;
 }
 
-.center-content {
+.guide-container {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    justify-content: center;
-    background-color: #181818;
-    justify-self: center;
+    background-color: #252525;
     color: white;
+    justify-content: center;
+}
+
+.guide-content {
+    flex-shrink: 1;
+    padding: 20px;
+    max-width: 870px;
 }
