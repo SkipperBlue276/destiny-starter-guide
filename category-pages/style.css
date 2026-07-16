@@ -27,6 +27,7 @@ a {
 .top-bar {
     display: flex;
     min-height: 80px;
+    min-width: 875px;
 
     border-width: 0px 0px 6px 0px;
     border-style: ridge;
@@ -89,6 +90,7 @@ a {
 .center-container {
     display: flex;
     flex-direction: row;
+    min-width: 875px;
     flex-grow: 1;
     background-color: #252525;
 }
@@ -96,6 +98,7 @@ a {
 .center-content {
     display: flex;
     flex-grow: 1;
+    flex-direction: row;
     justify-content: center;
     background-color: #181818;
     justify-self: center;
