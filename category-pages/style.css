@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Atkinson Hyperlegible Mono';
+
+    --normal-font-size: 20px;
+    --img-desc-font-size: 16px;
+    --keyword-icon-size: 26px;
+
+    --solar-color: #ef641f;
+    --arc-color: #79BBE7;
+    --void-color: #c094d4;
+    --stasis-color: #4d88ff;
+    --strand-color: #37d964;
 }
 
 html {
@@ -117,14 +127,32 @@ a {
 
 .guide-content > p {
     padding: 20px 0px;
-    font-size: 20px;
+    font-size: var(--normal-font-size);
 }
 .guide-content > img {
     flex-shrink: 1;
     max-height: 400px;
 }
 .guide-content > .image-desc {
-    font-size: 18px;
+    font-size: var(--img-desc-font-size);
     max-width: 600px;
     justify-self: center;
+}
+
+
+.keyword.solar {
+    color: var(--solar-color);
+}
+.keyword.solar::before {
+
+    background:url(../images/solar.png) no-repeat 0 0;
+    margin-bottom: 5px;
+
+    display:inline-block;
+    height:20px;
+    width:20px;
+    margin-right: 3px;
+    content: "";
+    background-size: 20px 20px;
+    vertical-align:bottom;
 }
