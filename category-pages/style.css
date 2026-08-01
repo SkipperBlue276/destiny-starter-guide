@@ -17,6 +17,7 @@
 html {
     height: 100%;
 }
+
 body {
     display: flex;
     height: 100%;
@@ -29,6 +30,7 @@ h1 {
     font-weight: bolder;
     font-size: 30px;
 }
+
 h2 {
     margin-bottom: 20px;
     font-size: 30px;
@@ -56,7 +58,8 @@ a {
     align-items: center;
     justify-self: left;
 }
-.return-home > a {
+
+.return-home>a {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -75,7 +78,7 @@ a {
     justify-content: center;
 }
 
-.top-guide-nav > div {
+.top-guide-nav>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +88,7 @@ a {
     border-width: 2px 0px;
     border-color: rgb(107, 36, 201);
 }
+
 .previous-guide {
     min-width: 150px;
     flex-grow: 0.15;
@@ -125,15 +129,17 @@ a {
     text-align: center;
 }
 
-.guide-content > p {
+.guide-content>p {
     padding: 20px 0px;
     font-size: var(--normal-font-size);
 }
-.guide-content > img {
+
+.guide-content>img {
     flex-shrink: 1;
     max-height: 400px;
 }
-.guide-content > .image-desc {
+
+.guide-content>.image-desc {
     font-size: var(--img-desc-font-size);
     max-width: 600px;
     justify-self: center;
@@ -143,16 +149,84 @@ a {
 .keyword.solar {
     color: var(--solar-color);
 }
-.keyword.solar::before {
 
-    background:url(../images/solar.png) no-repeat 0 0;
+.keyword.solar::before {
+    background: url(../images/solar.png) no-repeat 0 0;
     margin-bottom: 5px;
 
-    display:inline-block;
-    height:20px;
-    width:20px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
     margin-right: 3px;
     content: "";
     background-size: 20px 20px;
-    vertical-align:bottom;
+    vertical-align: bottom;
+}
+
+.keyword.arc {
+    color: var(--arc-color);
+}
+
+.keyword.arc::before {
+    background: url(../images/arc.png) no-repeat 0 0;
+    margin-bottom: 4px;
+
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    content: "";
+    background-size: 20px 20px;
+    vertical-align: bottom;
+}
+
+.keyword.void {
+    color: var(--void-color);
+}
+
+.keyword.void::before {
+    background: url(../images/void.png) no-repeat 0 0;
+    margin-bottom: 4px;
+
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    content: "";
+    background-size: 20px 20px;
+    vertical-align: bottom;
+}
+
+.keyword.stasis {
+    color: var(--stasis-color);
+}
+
+.keyword.stasis::before {
+    background: url(../images/stasis.png) no-repeat 0 0;
+    margin-bottom: 4px;
+
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    content: "";
+    background-size: 20px 20px;
+    vertical-align: bottom;
+}
+
+.keyword.strand {
+    color: var(--strand-color);
+}
+
+.keyword.strand::before {
+    background: url(../images/strand.png) no-repeat 0 0;
+    margin-bottom: 3px;
+
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    content: "";
+    background-size: 20px 20px;
+    vertical-align: bottom;
 }
