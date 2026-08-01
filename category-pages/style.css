@@ -40,6 +40,10 @@ a {
     color: white;
 }
 
+li {
+    margin-top: 18px;
+}
+
 .top-bar {
     display: flex;
     min-height: 80px;
