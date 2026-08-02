@@ -1,2 +1,3 @@
 - Create inventory page for classes.html link
 - Do movement guide, linked in warlocks.html
+- Link to stats.html in warlocks.html

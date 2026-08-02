@@ -243,7 +243,7 @@ li {
 
 .keyword.grenade::before {
     background: url('https://bungie.net/common/destiny2_content/icons/065cdaabef560e5808e821cefaeaa22c.png') no-repeat 0 0;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 
     display: inline-block;
     height: 20px;
@@ -261,7 +261,7 @@ li {
 
 .keyword.melee::before {
     background: url('https://bungie.net/common/destiny2_content/icons/fa534aca76d7f2d7e7b4ba4df4271b42.png') no-repeat 0 0;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 
     display: inline-block;
     height: 20px;
@@ -279,7 +279,7 @@ li {
 
 .keyword.class-ability::before {
     background: url('https://bungie.net/common/destiny2_content/icons/7eb845acb5b3a4a9b7e0b2f05f5c43f1.png') no-repeat 0 0;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 
     display: inline-block;
     height: 20px;
@@ -297,7 +297,7 @@ li {
 
 .keyword.super::before {
     background: url('https://bungie.net/common/destiny2_content/icons/585ae4ede9c3da96b34086fccccdc8cd.png') no-repeat 0 0;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 
     display: inline-block;
     height: 20px;
