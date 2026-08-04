@@ -1,25 +1,87 @@
+html {
+    margin: 0px 0px;
+    font-family: 'Atkinson Hyperlegible Mono';
+    height: 100%;
 
-body {
-    background-color: #3b3b3b;
-    color: white;
-    text-align: center;
+    --primary-color: #272427;
+    --secondary-color: #363136;
+    --accent-color: rgb(107, 36, 201);
 }
 
-.title {
+body {
+    height: 100%;
+    margin: 0px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    background-image: url(images/europa-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h2 {
+    margin: 0px;
+}
+
+#background {
+    height: 100%;
+    display: flex;    
+    justify-content: center;
+}
+
+#main-page-container {
+    height: 100%;
+    width: 875px;
+    background-color: var(--secondary-color);
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     height: auto;
     width: auto;
+    border-radius: 20px 20px;
     max-height: 200px;
-    padding-top: 30px;
-    
+    padding: 0px 10px;
+    margin-top: 30px;
+}
+
+.title-deco {
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 0px 70px;
+}
+
+#title-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px;
+    height: 175px;
+    min-width: 270px;
+    max-width: 470px;
+}
+
+.title-text-container>h1 {
     font-size: 30px;
     text-shadow: 3px 3px 1px black;
 }
 
 .title-side-image {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    flex-shrink: 1;
+    max-height: 100px;
 }
 
 .intro {
@@ -29,8 +91,61 @@ body {
     padding-top: 20px;
 }
 
-.tool-links {
+#center-body-container {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-    padding: 20px 0px 20px 0px;
+    flex-wrap: wrap;
+}
+
+#left-container {
+    background-color: var(--primary-color);
+    min-height: 200px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+#right-container {
+    min-height: 200px;
+    min-width: 400px;
+    margin: 10px;
+}
+
+#blurb {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+#external-tools-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding-top: 8px;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 10px;
+
+}
+
+.tool-divider {
+    justify-self: center;
+    height: 3px;
+    width: 250px;
+    background-color: var(--accent-color);
+    margin: 5px 0px;
+}
+
+.external-tool {
+    border-radius: 8px;
+    background-color: azure;
+    height: 100px;
+    width: 380px;
 }
