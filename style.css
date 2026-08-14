@@ -21,6 +21,9 @@ body {
 h2 {
     margin: 0px;
 }
+h3 {
+    margin: 0px;
+}
 
 #background {
     height: 100%;
@@ -144,8 +147,29 @@ h2 {
 }
 
 .external-tool {
+    display: flex;
+    text-decoration: none;
     border-radius: 8px;
-    background-color: azure;
+    background-color: var(--primary-color);
+    transition-duration: 150ms;
     height: 100px;
     width: 380px;
+}
+.external-tool:hover {
+    background-color: var(--secondary-color);
+}
+.external-tool > img {
+    height: 80px;
+    margin: 10px;
+}
+.tool-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 10px;
+}
+.tool-text > p {
+    margin: 5px;
+    font-style: italic;
 }
