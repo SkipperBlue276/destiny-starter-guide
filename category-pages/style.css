@@ -19,14 +19,10 @@
     --strand-color: #37d964;
 }
 
-html {
-    height: auto;
-    min-height: 100% !important;
-}
-
 body {
     display: flex;
-    height: 100%;
+    height: auto;
+    min-height: 100vh !important;
     flex-direction: column;
     background-color: var(--secondary-color);
 }
