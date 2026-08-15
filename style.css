@@ -9,31 +9,61 @@ html {
 }
 
 body {
-    height: 100%;
+    width: 100%;
     margin: 0px;
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
     background-image: url(images/europa-bg.jpg);
+    background-color: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: center;
 }
+
 h2 {
     margin: 0px;
 }
+
 h3 {
     margin: 0px;
 }
 
+
+@media only screen and (max-width: 950px) {
+    .grad-container {
+        display: none;
+    }
+    body {
+        background-image: none;
+    }
+}
+
+#left-grad {
+    background-image: linear-gradient(to left, var(--secondary-color), rgba(0,0,0,0));
+    height: 100%;
+    width: 100px;
+}
+
+#right-grad {
+    background-image: linear-gradient(to right, var(--secondary-color), rgba(0,0,0,0));
+    height: 100%;
+    width: 100px;
+}
+
+.grad-container {
+    max-width: 100px;
+}
+
 #background {
     height: 100%;
-    display: flex;    
+    display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 #main-page-container {
     height: 100%;
-    width: 875px;
+    width: 825px;
     background-color: var(--secondary-color);
 }
 
@@ -155,13 +185,16 @@ h3 {
     height: 100px;
     width: 380px;
 }
+
 .external-tool:hover {
     background-color: var(--secondary-color);
 }
-.external-tool > img {
+
+.external-tool>img {
     height: 80px;
     margin: 10px;
 }
+
 .tool-text {
     display: flex;
     justify-content: center;
@@ -169,7 +202,8 @@ h3 {
     color: white;
     margin: 10px;
 }
-.tool-text > p {
+
+.tool-text>p {
     margin: 5px;
     font-style: italic;
 }
