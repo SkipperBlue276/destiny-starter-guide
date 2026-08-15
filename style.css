@@ -30,6 +30,7 @@ h3 {
 }
 
 
+
 @media only screen and (max-width: 950px) {
     .grad-container {
         display: none;
@@ -37,6 +38,13 @@ h3 {
     body {
         background-image: none;
     }
+}
+
+.centered {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
 }
 
 #left-grad {
@@ -177,7 +185,6 @@ h3 {
 }
 
 .tool-divider {
-    justify-self: center;
     height: 3px;
     width: 250px;
     background-color: var(--accent-color);
