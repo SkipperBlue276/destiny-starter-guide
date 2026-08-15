@@ -10,7 +10,8 @@ html {
 
 body {
     width: 100%;
-    height: fit-content;
+    height: auto;
+    min-height: 100% !important;
     margin: 0px;
     background-color: var(--secondary-color);
     color: white;
