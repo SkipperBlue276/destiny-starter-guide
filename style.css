@@ -196,6 +196,7 @@ h3 {
 
 .external-tool:hover {
     background-color: var(--secondary-color);
+    transition-duration: 150ms;
 }
 
 .external-tool>img {

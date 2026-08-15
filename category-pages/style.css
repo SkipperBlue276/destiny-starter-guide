@@ -9,7 +9,8 @@
 
     --primary-color: #272427;
     --secondary-color: #363136;
-    --accent-color: rgb(107, 36, 201);
+    --accent-primary: rgb(107, 36, 201);
+    --accent-secondary: rgb(255, 80, 240);
 
     --solar-color: #ef641f;
     --arc-color: #79BBE7;
@@ -55,7 +56,7 @@ li {
 
     border-width: 0px 0px 6px 0px;
     border-style: ridge;
-    border-color: var(--accent-color);
+    border-color: var(--accent-primary);
 }
 
 .return-home {
@@ -74,7 +75,26 @@ li {
     align-items: center;
     height: 70px;
     width: 180px;
+    border-radius: 10px;
 }
+
+.return-home>a:hover {
+    background-color: var(--secondary-color);
+
+    img {
+        filter: invert(45%) sepia(78%) saturate(2331%) hue-rotate(284deg) brightness(107%) contrast(104%);
+    }
+    transition-duration: 150ms;
+}
+
+.return-home>a>img {
+    height: 50px;
+    margin: 5px;
+}
+.return-home>a>p {
+    margin: 5px;
+}
+
 
 .top-guide-nav {
     display: flex;
@@ -93,8 +113,12 @@ li {
     align-items: center;
     margin: 8px 0px;
     border-style: solid;
-    border-width: 2px 0px;
-    border-color: var(--accent-color);
+    border-width: 3px 0px;
+    border-color: var(--accent-primary);
+}
+.top-guide-nav>div:hover {
+    border-color: var(--accent-secondary);
+    transition-duration: 150ms;
 }
 
 .previous-guide {
@@ -155,14 +179,16 @@ li {
     color: white;
     justify-content: center;
     background-image: url(../images/europa-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media only screen and (max-width: 1380px) {
         .grad-container {
             display: none;
         }
-            background-image: none;
-            background-color: var(--secondary-color);
-        
+
+        background-image: none;
+        background-color: var(--secondary-color);
     }
 }
 
