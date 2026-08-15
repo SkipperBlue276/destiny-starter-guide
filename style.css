@@ -151,6 +151,7 @@ h3 {
     min-width: 200px;
     border-radius: 10px;
     margin: 10px 0px;
+    font-size: small;
 }
 #blurb > img {
     height: 120px;
@@ -189,7 +190,7 @@ h3 {
     border-radius: 8px;
     background-color: var(--primary-color);
     transition-duration: 150ms;
-    height: 100px;
+    height: 130px;
     width: 380px;
 }
 
@@ -199,7 +200,7 @@ h3 {
 
 .external-tool>img {
     height: 80px;
-    margin: 10px;
+    margin: 25px 10px;
 }
 
 .tool-text {
@@ -212,5 +213,6 @@ h3 {
 
 .tool-text>p {
     margin: 5px;
+    font-size: small;
     font-style: italic;
 }
