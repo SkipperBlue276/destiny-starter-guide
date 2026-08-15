@@ -121,6 +121,32 @@ li {
     background-color: var(--secondary-color);
 }
 
+@media only screen and (max-width: 950px) {
+    .grad-container {
+        display: none;
+    }
+
+    body {
+        background-image: none;
+    }
+}
+
+#left-grad {
+    background-image: linear-gradient(to left, var(--secondary-color), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 100px;
+}
+
+#right-grad {
+    background-image: linear-gradient(to right, var(--secondary-color), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 100px;
+}
+
+.grad-container {
+    max-width: 100px;
+}
+
 .guide-container {
     display: flex;
     flex-grow: 1;
@@ -128,9 +154,20 @@ li {
     background-color: var(--secondary-color);
     color: white;
     justify-content: center;
+    background-image: url(../images/europa-bg.jpg);
+
+    @media only screen and (max-width: 1380px) {
+        .grad-container {
+            display: none;
+        }
+            background-image: none;
+            background-color: var(--secondary-color);
+        
+    }
 }
 
 .guide-content {
+    background-color: var(--secondary-color);
     flex-shrink: 1;
     padding: 20px;
     max-width: 870px;
