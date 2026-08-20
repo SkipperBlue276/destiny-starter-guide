@@ -226,28 +226,21 @@ li {
     font-size: var(--normal-font-size);
 }
 
-.guide-content>.img-large {
+.guide-content>.img {
     display: flex;
     justify-content: center;
     padding: 0px 20px;
+}
+
+.guide-content>.img>img {
+    flex-shrink: 1;
+    width: 100%;
+}
+.guide-content>.img.large {
     max-width: 800px;
 }
-
-.guide-content>.img-medium {
-    display: flex;
-    justify-content: center;
-    padding: 0px 20px;
+.guide-content>.img.medium {
     max-width: 450px;
-}
-
-.guide-content>.img-large>img {
-    flex-shrink: 1;
-    width: 100%;
-}
-
-.guide-content>.img-medium>img {
-    flex-shrink: 1;
-    width: 100%;
 }
 
 .guide-content>.image-desc {
