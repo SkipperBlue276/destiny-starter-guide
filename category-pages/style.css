@@ -196,6 +196,10 @@ li {
 }
 
 .guide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--secondary-color);
     flex-shrink: 1;
     padding: 20px;
@@ -208,15 +212,30 @@ li {
     font-size: var(--normal-font-size);
 }
 
-.guide-content>img {
+.guide-content>.img-large {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    max-width: 800px;
+}
+.guide-content>.img-medium {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    max-width: 450px;
+}
+.guide-content>.img-large>img {
     flex-shrink: 1;
-    max-height: 400px;
+    width: 100%;
+}
+.guide-content>.img-medium>img {
+    flex-shrink: 1;
+    width: 100%;
 }
 
 .guide-content>.image-desc {
     font-size: var(--img-desc-font-size);
     max-width: 600px;
-    justify-self: center;
 }
 
 
